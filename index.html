@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faa Ticket - Pemesanan Tiket Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="kessoku-band-seeklogo.png" alt="Logo TiketKu dengan gaya modern menggunakan gradasi biru">
+                <h1>Faa Ticket</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="#booking-form"><i class="fas fa-calendar-alt"></i> Acara</a></li>
+                    <li><a href="#footer"><i class="fas fa-info-circle"></i> Tentang Kami</a></li>
+                    <li><a href="#footer"><i class="fas fa-envelope"></i> Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Cari & Pesan Tiket Acara Favoritmu</h2>
+                <p>Temukan berbagai acara menarik dan dapatkan pengalaman tak terlupakan bersama kami</p>
+            </div>
+            <div class="hero-image">
+                <img src="poster kimetsu.jpg">
+            </div>
+        </section>
+
+        <section class="ticket-form">
+            <h2>Form Pemesanan Tiket</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="event">Pilih Acara:</label>
+                    <select id="event" required>
+                        <option value="">-- Pilih Acara --</option>
+                        <option value="concert1">Konser Musik A</option>
+                        <option value="concert2">Festival Musik B</option>
+                        <option value="theater">Pertunjukan Teater C</option>
+                        <option value="exhibition">Exhibisi Seni D</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ticket-type">Jenis Tiket:</label>
+                    <select id="ticket-type" required>
+                        <option value="">-- Pilih Jenis Tiket --</option>
+                        <option value="vip">VIP (Rp500.000)</option>
+                        <option value="regular">Reguler (Rp250.000)</option>
+                        <option value="student">Pelajar (Rp150.000)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Jumlah:</label>
+                    <input type="number" id="quantity" min="1" max="10" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">No. Handphone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment">Metode Pembayaran:</label>
+                    <select id="payment" required>
+                        <option value="">-- Pilih Pembayaran --</option>
+                        <option value="bank">Transfer Bank</option>
+                        <option value="credit">Kartu Kredit</option>
+                        <option value="ewallet">E-Wallet</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-submit">Pesan Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Faa Ticket</h3>
+                    <p>Platform pemesanan tiket online terpercaya untuk berbagai acara dan hiburan.</p>
+                    <p>Untuk memenuhi nilai UAS Matkul Cloud Computing</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fas fa-envelope"></i> muhammadrif33@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +62-882-975-0873</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#footer">Syarat & Ketentuan</a></li>
+                        <li><a href="#footer">Kebijakan Privasi</a></li>
+                        <li><a href="https://www.instagram.com/botan_ya.3?igsh=MTB4M3RkMWI3dDR1cw==">Pusat Bantuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Muhammad Rifai (231011403131)</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/share/1B6TbRwj5q/"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/botan_ya.3?igsh=MTB4M3RkMWI3dDR1cw=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
